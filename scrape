@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+require 'pathname'
+ENV['BUNDLE_GEMFILE'] ||= File.expand_path('../../Gemfile', Pathname.new(__FILE__).realpath)
+
+require 'rubygems'
+require 'bundler/setup'
+
+$LOAD_PATH << Pathname(__dir__).parent.join('app')
+
+require 'runner'
+require 'lockfile'
+
+Lockfile.new('lock', retries: 0) do
+  Runner.new.run
+end
