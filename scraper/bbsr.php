@@ -5,7 +5,7 @@ $startpos = 0;
 while($pos = strpos($filestring, "<a href", $startpos)) 
 { 
      $string = substr($filestring, $pos, strpos($filestring, "</a>", $pos + 1) - $pos); 
-    if(stristr($string, 'id="ausschreibung')) { 
+    if(stristr($string, 'id="ausschreibung"')) { 
         echo $string."</br>"; 
     } 
     $startpos = $pos + 1; 
