@@ -7,9 +7,9 @@ class VDIVDE
   path "/leistungsspektrum/ausschreibungen"
 
   ausschreibungen "css=div#parent-fieldname-text>li", :iterator do
-    titel 'b'
-    frist 'li'
-    link 'a.external-link'
+    titel 'css=b'
+    frist 'css=li'
+    link 'css=a.external-link'
   end
 end
 
