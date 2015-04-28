@@ -1,3 +1,3 @@
 # Testradar
-Der Testradar ist ein Scraper auf Ruby-Basis, der bestimmte Seiten auf Förderausschreibungen durchsuchen soll.
+Der Testradar ist ein Scraper auf Ruby-Basis, der bestimmte Seiten nach Förderausschreibungen durchsuchen soll.
 
